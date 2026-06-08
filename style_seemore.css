@@ -1,0 +1,429 @@
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-image: url(Image_index/Wonderland_.gif);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 20px;
+  padding: 8px 10px;
+}
+
+.course span {
+  color: aqua;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.course span {
+  color: aqua;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    move 2s steps(30) infinite,
+    blink 0.8s infinite,
+    alternate;
+}
+
+@keyframes move {
+  from {
+    width: 0;
+  }
+  to {
+    width: 800px;
+  }
+}
+
+.logo h2 {
+  color: rgb(255, 255, 255);
+  font-family: "Kavoon", serif;
+  margin-right: 200px;
+}
+
+.title {
+  margin-right: 100px;
+}
+
+.title li {
+  list-style: none;
+  display: inline-block;
+}
+
+.title li {
+  padding: 0px 15px;
+}
+
+.title li a {
+  color: rgb(255, 255, 255);
+  margin-right: 0px;
+  font-size: 20px;
+  font-family: "ADLaM Display", sans-serif;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.title li a::before {
+  content: "";
+  bottom: -2px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #ff75c3;
+  background: linear-gradient(
+    to right,
+    #ff75c3,
+    #ffa647,
+    #ffe83f,
+    #9fff5b,
+    #70e2ff,
+    #cd93ff
+  );
+}
+
+.title li a:hover {
+  transform: scale(1.1);
+  color: #ffb347;
+  color: linear-gradient(to right, #ffb347, #ffcc33);
+}
+
+.search {
+  position: relative;
+  list-style: none;
+  padding: 0px 40px;
+  margin-top: -5px;
+}
+
+.search input {
+  border-radius: 20px;
+  width: 300px;
+  height: 40px;
+  padding-left: 15px;
+  color: white;
+}
+
+li input::placeholder {
+  color: hsla(0, 10%, 96%, 0.753);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.search i {
+  position: absolute;
+  right: 60px;
+  top: 12px;
+  color: rgb(255, 255, 255);
+}
+
+/*================== Title CV============================*/
+
+.title {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.title h2 {
+  font-family: "ADLaM Display", sans-serif;
+  font-size: 50px;
+  position: relative;
+}
+
+.title h2::before {
+  content: "";
+  left: 36%;
+  bottom: 2px;
+  position: absolute;
+  width: 400px;
+  height: 4px;
+  background-color: pink;
+}
+
+.title p {
+  font-family: "BioRhyme", serif;
+  line-height: 0.3;
+}
+
+.line hr {
+  width: 100%;
+  height: 5px;
+  border: none !important;
+  background: #000 !important;
+}
+
+/* ============== pic - name ============*/
+.pic-name img {
+  width: 320px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #70e2ff;
+}
+
+.pic-name {
+  display: flex;
+  align-items: center;
+  padding: 10px 180px;
+}
+
+.pic-name .name {
+  padding: 0px 15px;
+  margin-top: -150px;
+}
+
+.name h1 {
+  font-family: "BioRhyme", serif;
+  font-size: 40px;
+  position: relative;
+}
+
+.name h1.no::before {
+  content: "";
+  left: 0;
+  bottom: 4px;
+  position: absolute;
+  width: 140px;
+  height: 3px;
+  background: #70e2ff;
+}
+
+.name h1.space-name::before {
+  content: "";
+  left: 50px;
+  bottom: 4px;
+  position: absolute;
+  width: 240px;
+  height: 3px;
+  background: #70e2ff;
+}
+
+.name .space-name {
+  padding: 0px 50px;
+}
+
+.position {
+  margin-top: 40px;
+  font-family: "ADLaM Display", sans-serif;
+  margin-left: -250px;
+  display: flex;
+}
+.run {
+  margin-top: -4px;
+  position: relative;
+}
+
+.run::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 125px;
+  height: 3px;
+  background: #70e2ff;
+}
+
+.position span {
+  margin-left: 20px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #07b40d;
+  width: 0;
+  animation:
+    typing 10s steps(34, end) infinite,
+    blink 0.1s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 34ch;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    border-color: #000;
+  }
+
+  50% {
+    border-color: transparent;
+  }
+}
+
+.about {
+  display: grid;
+  text-align: center;
+  margin-left: -850px;
+}
+
+.about h2 {
+  font-family: "ADLaM Display", sans-serif;
+}
+
+.locat i {
+  color: #07b40d;
+  font-size: 20px;
+}
+
+.about p {
+  font-family: "Source Serif 4", serif;
+  font-size: 20px;
+}
+
+.locat p {
+  text-align: center;
+  font-family: "Source Serif 4", serif;
+  margin-left: -850px;
+  line-height: 0.5;
+  font-size: 20px;
+}
+
+.info-detail {
+  font-family: "ADLaM Display", sans-serif;
+  margin-left: 170px;
+}
+
+.sub-info li {
+  font-family: "Source Serif 4", serif;
+  line-height: 1;
+  margin-left: -80px;
+}
+
+.sub-info p {
+  font-size: 20px;
+}
+
+.sub-info li {
+  display: flex;
+  align-items: center;
+}
+
+.sub-info1 li {
+  line-height: 2;
+}
+
+.sub-info li h5 {
+  width: 180px;
+  margin: 0;
+}
+
+.bar {
+  margin-left: 10px;
+  width: 100px;
+  display: block;
+  height: 5px;
+  background-color: #353b48;
+  border-radius: 10px;
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.bar span {
+  height: 5px;
+  float: left;
+  background: #fc00ff;
+  background: linear-gradient(to right, #fc00ff, #00dbde);
+  border-radius: 10px;
+}
+
+.word {
+  width: 90%;
+  animation: word 3s;
+}
+
+.excel {
+  width: 70%;
+  animation: excel 3s;
+}
+
+.power {
+  width: 90%;
+  animation: power 3s;
+}
+
+.ps {
+  width: 70%;
+  animation: ps 3s;
+}
+
+.ai {
+  width: 70%;
+  animation: ai 3s;
+}
+
+.fg {
+  width: 70%;
+  animation: fg 3s;
+}
+
+@keyframes word {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes excel {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes power {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes ps {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@keyframes ai {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes fg {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
