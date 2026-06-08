@@ -756,3 +756,169 @@ textarea::placeholder {
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ css seemore+++++++++++++++++++++++++++++++++++++*/
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ RESPONSIVE FOR PHONE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 768px) {
+  /* 1. Navbar & Navigation */
+  .navdiv {
+    flex-direction: column; /* ប្ដូរពីជួរដេកមកជួរឈរ */
+    padding: 10px;
+    text-align: center;
+  }
+
+  .logo {
+    margin-left: 0;
+    padding: 5px;
+  }
+
+  .logo h2 {
+    margin-right: 0; /* ដក margin ធំៗចេញ */
+  }
+
+  .title {
+    margin-right: 0;
+    padding: 10px 0;
+  }
+
+  .title li {
+    padding: 5px 10px; /* បង្រួមគម្លាត menu */
+  }
+
+  .search {
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .search input {
+    width: 85% !important; /* ឱ្យប្រអប់ Search រួមតាមអេក្រង់ */
+  }
+
+  .search i {
+    right: 35px; /* កែសម្រួលទីតាំង Icon Search */
+  }
+
+  /* 2. Home Screen Section */
+  .home-screen {
+    height: auto;
+    padding: 120px 20px 40px 20px; /* បន្ថែម padding ខាងលើដើម្បីកុំឱ្យបាំងជាមួយ navbar fixed */
+    display: flex;
+    flex-direction: column-reverse; /* យកទម្រង់អក្សរមកក្រោម រូបភាពទៅលើវិញ */
+    align-items: center;
+    text-align: center;
+  }
+
+  .hello {
+    margin-top: 20px; /* លុប margin-top: -25% ចោល */
+    padding: 0;
+  }
+
+  .hello h1 {
+    font-size: 35px; /* បង្រួមទំហំអក្សរចំណងជើង */
+  }
+
+  .hello p {
+    font-size: 16px;
+  }
+
+  .logohak img {
+    width: 60%; /* ពង្រីករូបថតឱ្យធំល្មមមើលឃើញលើទូរសព្ទ */
+    height: auto;
+    margin-left: 0; /* លុប margin-left: 60% ចោល */
+    margin-top: 20px;
+  }
+
+  .see button {
+    margin-left: 0; /* ឱ្យប៊ូតុងនៅកណ្ដាល */
+    margin-top: 30px;
+  }
+
+  /* 3. About Section */
+  .about {
+    height: auto;
+    flex-direction: column; /* ប្ដូរជាជួរឈរ */
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .about .pic-box img {
+    position: relative; /* ប្ដូរពី absolute មក relative វិញដើម្បីកុំឱ្យបាំងអក្សរ */
+    width: 60%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .text {
+    margin-right: 0;
+  }
+
+  .text h1 {
+    font-size: 28px;
+  }
+
+  .text p {
+    padding: 0 10px;
+    font-size: 16px;
+  }
+
+  .about-cv {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  /* 4. Services Section (oo & oo1) */
+  .oo,
+  .oo1 {
+    height: auto; /* ឱ្យកម្ពស់ធ្លាក់ចុះតាម auto */
+    padding: 40px 20px;
+  }
+
+  .tangle-1,
+  .tangle-2 {
+    flex-direction: column; /* ឱ្យកាត (Cards) ធ្លាក់ចុះមកក្រោមតម្រៀបជួរឈរ */
+    gap: 30px;
+  }
+
+  .service h1::before,
+  .service1 h1::before {
+    display: none; /* លាក់បន្ទាត់លឿងខាងក្រោមចេញ ព្រោះវាប្រើ position ថេរ (left: 570px) ធ្វើឱ្យធ្លាយអេក្រង់ */
+  }
+
+  /* 5. Contact Section */
+  .in-gif img {
+    width: 90%;
+    height: auto;
+  }
+
+  .in-gif input,
+  .in-gif .en input {
+    width: 90% !important;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .contact h1::before {
+    display: none;
+  }
+
+  /* 6. Footer Section */
+  .foot {
+    grid-template-columns: 1fr; /* ប្ដូរពី 4 ជួរដេក មកសល់តែ 1 ជួរឈរវិញ */
+    gap: 40px;
+    padding: 40px 30px;
+    text-align: center;
+  }
+
+  .foot .abou h2::before,
+  .quick h2::before,
+  .quick1 h2::before,
+  .con h2::before {
+    left: 50%;
+    transform: translateX(-50%); /* ឱ្យបន្ទាត់លឿងនៅចំកណ្ដាលតាមអក្សរ */
+  }
+
+  .f-m {
+    justify-content: center; /* ឱ្យ icon បណ្ដាញសង្គមនៅចំកណ្ដាល */
+  }
+}

@@ -427,3 +427,108 @@ li input::placeholder {
     width: 70%;
   }
 }
+
+/*===================================================================================================*/
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ RESPONSIVE FOR CV SECTION ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 768px) {
+  /* 1. Title CV Section */
+  .title h2 {
+    font-size: 32px; /* បង្រួមចំណងជើង CV កុំឱ្យធំពេក */
+  }
+
+  .title h2::before {
+    left: 10%; /* កែសម្រួលបន្ទាត់ផ្កាឈូកឱ្យមកនៅកណ្ដាលអេក្រង់ទូរសព្ទ */
+    width: 80%;
+  }
+
+  /* 2. Profile Picture & Name */
+  .pic-name {
+    flex-direction: column; /* ប្ដូរពីរៀបជួរដេក មកជាជួរឈរវិញ */
+    padding: 20px;
+    text-align: center;
+  }
+
+  .pic-name img {
+    width: 220px; /* បង្រួមទំហំរូបថត profile ឱ្យសមល្មម */
+    height: 220px;
+    margin-bottom: 20px;
+  }
+
+  .pic-name .name {
+    padding: 0;
+    margin-top: 0; /* លុប margin-top: -150px ចោលដើម្បីកុំឱ្យហោះទៅបាំងរូប */
+  }
+
+  .name h1 {
+    font-size: 26px;
+  }
+
+  .name h1.no::before,
+  .name h1.space-name::before {
+    display: none; /* លាក់បន្ទាត់ក្រោមឈ្មោះចេញ ដើម្បីកុំឱ្យធ្លាយអេក្រង់ */
+  }
+
+  .name .space-name {
+    padding: 0; /* ដក padding ចេញ */
+  }
+
+  /* 3. Position (Typing Animation) */
+  .position {
+    margin-top: 20px;
+    margin-left: 0; /* លុប margin-left: -250px ចោល */
+    justify-content: center; /* ឱ្យអក្សររត់នៅចំកណ្ដាល */
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .run::before {
+    display: none;
+  }
+
+  .position span {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  /* 4. About & Location (កែសម្រួល margin ដែលដកធំៗចេញ) */
+  .about {
+    margin-left: 0; /* លុប margin-left: -850px ចោល */
+    padding: 0 20px;
+  }
+
+  .locat p {
+    margin-left: 0; /* លុប margin-left: -850px ចោល */
+    line-height: 1.5;
+    padding: 0 20px;
+  }
+
+  /* 5. Info Detail & Skills Bar */
+  .info-detail {
+    margin-left: 0; /* លុប margin-left: 170px ចោល */
+    padding: 0 20px;
+    margin-top: 30px;
+  }
+
+  .sub-info li {
+    margin-left: 0; /* លុប margin-left: -80px ចោល */
+    flex-direction: column; /* ឱ្យឈ្មោះជំនាញ និងរបារកម្រិត (Skill Bar) ធ្លាក់ចុះមកក្រោម */
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding-left: 10px;
+  }
+
+  .sub-info li h5 {
+    width: 100%; /* ឱ្យអក្សរឈ្មោះជំនាញរត់ពេញជួរ */
+    margin-bottom: 5px;
+  }
+
+  .bar {
+    margin-left: 0;
+    width: 100%; /* ឱ្យរបារ Skill ពង្រីកពេញផ្ទៃអេក្រង់ទូរសព្ទ */
+    height: 8px; /* ធ្វើឱ្យរបារក្រាស់ជាងមុនបន្តិច ងាយស្រួលមើលលើទូរសព្ទ */
+  }
+
+  .bar span {
+    height: 8px;
+  }
+}
