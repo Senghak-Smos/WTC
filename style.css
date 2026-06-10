@@ -137,7 +137,10 @@ li input::placeholder {
 }
 
 .home-screen {
-  background-image: url(Image_index/Stars\ Shooting\ Star\ GIF\ -\ Stars\ Star\ Shooting\ Star\ -\ Discover\ &\ Share\ GIFs.gif);
+  background: #2b5876;
+  background: linear-gradient(to right, #2b5876, #4e4376);
+  /* background-image: url(Image_index/Stars\ Shooting\ Star\ GIF\ -\ Stars\ Star\ Shooting\ Star\ -\ Discover\ &\ Share\ GIFs.gif);
+  */
   /*background: #7f00ff;
   background: linear-gradient(to right, #7f00ff, #e100ff);*/
   padding: 40px 0px;
@@ -149,7 +152,7 @@ li input::placeholder {
   color: white;
   font-family: "Times New Roman", Times, serif;
   font-size: 18px;
-  margin-top: -25%;
+  margin-top: -26%;
   padding: 0px 100px;
 }
 
@@ -178,11 +181,11 @@ li input::placeholder {
 
 .logohak img {
   width: 30%;
-  height: 20%;
+  height: 100%;
   margin-left: 60%;
-  margin-top: 6%;
+  margin-top: 3%;
   border: 2px solid #00fff0;
-  border-radius: 50%;
+  border-radius: 5%;
   box-shadow: 0 5px 20px rgb(104, 231, 178);
   animation: up 2s ease-in-out infinite;
 }
@@ -240,8 +243,11 @@ li input::placeholder {
 
 .about {
   width: 100%;
-  height: 100vh;
-  background-image: url(Image_index/ab.gif);
+  height: 110vh;
+  background: #000c40;
+  background: linear-gradient(to right, #000c40, #607d8b);
+
+  /* background-image: url(Image_index/ab.gif); */
   /*background: #09203f;
   background: linear-gradient(to right, #09203f, #537895);*/
   display: flex;
@@ -443,7 +449,7 @@ li input::placeholder {
 }
 
 .oo {
-  background-image: url(Image_index/download\ \(1\).gif);
+  background-image: url(Image_index/fbc6f31bd3b84159470b973aca7e0f97_gif\ 1\,920\ ×\ 1\,080\ pixels.gif);
   width: 100%;
   height: 140vh;
   padding: 50px 0px;
@@ -473,8 +479,8 @@ li input::placeholder {
 .design {
   width: 300px;
   height: 350px;
-  background: #adbdc690;
-  background: linear-gradient(to right, #9dabb29b, #8a90af);
+  background: #adbdc64c;
+  background: linear-gradient(to right, #9dabb249, #8a90af49);
   box-shadow: 0 0 20px greenyellow;
   align-items: center;
   justify-content: center;
@@ -758,167 +764,3 @@ textarea::placeholder {
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ css seemore+++++++++++++++++++++++++++++++++++++*/
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ RESPONSIVE FOR PHONE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-@media screen and (max-width: 768px) {
-  /* 1. Navbar & Navigation */
-  .navdiv {
-    flex-direction: column; /* ប្ដូរពីជួរដេកមកជួរឈរ */
-    padding: 10px;
-    text-align: center;
-  }
-
-  .logo {
-    margin-left: 0;
-    padding: 5px;
-  }
-
-  .logo h2 {
-    margin-right: 0; /* ដក margin ធំៗចេញ */
-  }
-
-  .title {
-    margin-right: 0;
-    padding: 10px 0;
-  }
-
-  .title li {
-    padding: 5px 10px; /* បង្រួមគម្លាត menu */
-  }
-
-  .search {
-    padding: 0;
-    margin-top: 5px;
-  }
-
-  .search input {
-    width: 85% !important; /* ឱ្យប្រអប់ Search រួមតាមអេក្រង់ */
-  }
-
-  .search i {
-    right: 35px; /* កែសម្រួលទីតាំង Icon Search */
-  }
-
-  /* 2. Home Screen Section */
-  .home-screen {
-    height: auto;
-    padding: 120px 20px 40px 20px; /* បន្ថែម padding ខាងលើដើម្បីកុំឱ្យបាំងជាមួយ navbar fixed */
-    display: flex;
-    flex-direction: column-reverse; /* យកទម្រង់អក្សរមកក្រោម រូបភាពទៅលើវិញ */
-    align-items: center;
-    text-align: center;
-  }
-
-  .hello {
-    margin-top: 20px; /* លុប margin-top: -25% ចោល */
-    padding: 0;
-  }
-
-  .hello h1 {
-    font-size: 35px; /* បង្រួមទំហំអក្សរចំណងជើង */
-  }
-
-  .hello p {
-    font-size: 16px;
-  }
-
-  .logohak img {
-    width: 60%; /* ពង្រីករូបថតឱ្យធំល្មមមើលឃើញលើទូរសព្ទ */
-    height: auto;
-    margin-left: 0; /* លុប margin-left: 60% ចោល */
-    margin-top: 20px;
-  }
-
-  .see button {
-    margin-left: 0; /* ឱ្យប៊ូតុងនៅកណ្ដាល */
-    margin-top: 30px;
-  }
-
-  /* 3. About Section */
-  .about {
-    height: auto;
-    flex-direction: column; /* ប្ដូរជាជួរឈរ */
-    padding: 60px 20px;
-    text-align: center;
-  }
-
-  .about .pic-box img {
-    position: relative; /* ប្ដូរពី absolute មក relative វិញដើម្បីកុំឱ្យបាំងអក្សរ */
-    width: 60%;
-    height: auto;
-    margin-left: 0;
-    margin-top: 0;
-    margin-bottom: 30px;
-  }
-
-  .text {
-    margin-right: 0;
-  }
-
-  .text h1 {
-    font-size: 28px;
-  }
-
-  .text p {
-    padding: 0 10px;
-    font-size: 16px;
-  }
-
-  .about-cv {
-    padding: 0;
-    margin-top: 20px;
-  }
-
-  /* 4. Services Section (oo & oo1) */
-  .oo,
-  .oo1 {
-    height: auto; /* ឱ្យកម្ពស់ធ្លាក់ចុះតាម auto */
-    padding: 40px 20px;
-  }
-
-  .tangle-1,
-  .tangle-2 {
-    flex-direction: column; /* ឱ្យកាត (Cards) ធ្លាក់ចុះមកក្រោមតម្រៀបជួរឈរ */
-    gap: 30px;
-  }
-
-  .service h1::before,
-  .service1 h1::before {
-    display: none; /* លាក់បន្ទាត់លឿងខាងក្រោមចេញ ព្រោះវាប្រើ position ថេរ (left: 570px) ធ្វើឱ្យធ្លាយអេក្រង់ */
-  }
-
-  /* 5. Contact Section */
-  .in-gif img {
-    width: 90%;
-    height: auto;
-  }
-
-  .in-gif input,
-  .in-gif .en input {
-    width: 90% !important;
-    margin-left: 0;
-    margin-bottom: 15px;
-  }
-
-  .contact h1::before {
-    display: none;
-  }
-
-  /* 6. Footer Section */
-  .foot {
-    grid-template-columns: 1fr; /* ប្ដូរពី 4 ជួរដេក មកសល់តែ 1 ជួរឈរវិញ */
-    gap: 40px;
-    padding: 40px 30px;
-    text-align: center;
-  }
-
-  .foot .abou h2::before,
-  .quick h2::before,
-  .quick1 h2::before,
-  .con h2::before {
-    left: 50%;
-    transform: translateX(-50%); /* ឱ្យបន្ទាត់លឿងនៅចំកណ្ដាលតាមអក្សរ */
-  }
-
-  .f-m {
-    justify-content: center; /* ឱ្យ icon បណ្ដាញសង្គមនៅចំកណ្ដាល */
-  }
-}
