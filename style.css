@@ -451,13 +451,13 @@ li input::placeholder {
 .oo {
   background-image: url(Image_index/fbc6f31bd3b84159470b973aca7e0f97_gif\ 1\,920\ ×\ 1\,080\ pixels.gif);
   width: 100%;
-  height: 140vh;
+  height: 100vh;
   padding: 50px 0px;
 }
 
 .tangle-1 {
   display: flex;
-  gap: 200px;
+  gap: 65px;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
