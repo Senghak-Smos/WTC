@@ -5,12 +5,14 @@
 }
 
 .navbar {
-  background-image: url(Image_index/Wonderland_.gif);
+  background-color: #111;
+  /* background-image: url(Image_index/Wonderland_.gif); */
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
+  will-change: transform;
 }
 
 .navdiv {
@@ -772,6 +774,7 @@ textarea::placeholder {
   body {
     width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
   .hamburger-btn {

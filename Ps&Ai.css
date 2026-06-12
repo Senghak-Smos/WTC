@@ -6,6 +6,7 @@
 
 .navbar {
   background-image: url(Image_index/Wonderland_.gif);
+  will-change: transform;
   width: 100%;
   position: fixed;
   top: 0;
@@ -345,6 +346,7 @@ body {
   body {
     width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
   .hamburger-btn {

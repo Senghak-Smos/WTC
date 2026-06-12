@@ -6,6 +6,7 @@
 
 .navbar {
   background-image: url(Image_index/Wonderland_.gif);
+  will-change: transform;
   width: 100%;
   position: fixed;
   top: 0;
@@ -699,6 +700,18 @@ div .linemid {
   }
 }
 
+.end {
+  text-align: center;
+  padding-top: 5px;
+  background: rgba(0, 0, 0, 0.477);
+  color: white;
+  height: 5vh;
+}
+
+.hamburger-btn {
+  display: none;
+}
+
 /*===================================================================================================*/
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ RESPONSIVE FOR CV SECTION ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 @media (max-width: 768px) {
@@ -706,6 +719,7 @@ div .linemid {
   body {
     width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
   .hamburger-btn {
@@ -764,5 +778,184 @@ div .linemid {
 
   .title1 h2::before {
     display: none !important;
+  }
+
+  .pic-name {
+    flex-direction: column !important;
+    padding: 20px !important;
+    text-align: center !important;
+  }
+  .pic-name img {
+    width: 180px !important;
+    height: 180px !important;
+    margin-bottom: 20px !important;
+  }
+  .pic-name .name {
+    margin-top: 0 !important;
+    padding: 0 !important;
+  }
+  .name h1 {
+    font-size: 28px !important;
+    display: inline-block;
+    margin: 0 5px !important;
+  }
+  .name h1.no::before,
+  .name h1.space-name::before {
+    display: none !important;
+  }
+  .position {
+    margin-left: 0 !important;
+    margin-top: 15px !important;
+    justify-content: center !important;
+    flex-wrap: wrap;
+  }
+  .position h2.run::before {
+    display: none !important;
+  }
+  .position span {
+    margin-left: 5px !important;
+    font-size: 16px !important;
+    white-space: normal !important;
+    width: 100% !important;
+    animation: none !important;
+  }
+
+  /* ========== About ==========*/
+  .about {
+    margin-left: 0 !important;
+    padding: 0 20px !important;
+    display: block !important;
+  }
+  .abo::before,
+  .con::before,
+  .per::before,
+  .com::before,
+  .lang::before,
+  .cor::before,
+  .edu::before,
+  .exp::before,
+  .hob::before {
+    display: none !important;
+  }
+  .about p {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+  .locat p {
+    margin-left: 0 !important;
+    line-height: 1.4 !important;
+    font-size: 16px !important;
+    padding: 5px 20px !important;
+    text-align: left !important;
+  }
+
+  div .linemid {
+    display: none !important;
+  }
+
+  .info-detail {
+    margin-left: 0 !important;
+    padding: 20px !important;
+  }
+  .sub-info li {
+    margin-left: 0 !important;
+    margin-bottom: 10px !important;
+  }
+  .sub-info p,
+  .sub-info1 p,
+  .hob-info p {
+    font-size: 16px !important;
+  }
+  .sub-info1 li {
+    margin-bottom: 15px !important;
+  }
+  .bar {
+    margin-left: auto !important;
+    width: 120px !important;
+  }
+
+  .education,
+  .education1,
+  .education2 {
+    text-align: left !important;
+    margin-right: 0 !important;
+    margin-top: 20px !important;
+    padding: 0 20px !important;
+  }
+  .education h4,
+  .education1 h4 {
+    margin-right: 0 !important;
+    font-size: 16px !important;
+  }
+  .education hr,
+  .education1 hr {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-top: 5px !important;
+  }
+  div[style*="margin-left: 700px"],
+  div[style*="margin-left: 705px"] {
+    margin-left: 0 !important;
+    padding: 0 20px !important;
+  }
+
+  .graphic {
+    margin-left: 0 !important;
+    padding: 0 20px !important;
+    margin-bottom: 15px !important;
+  }
+  .graphic h4 {
+    margin-right: 0 !important;
+    font-size: 18px !important;
+  }
+  .graphic hr {
+    width: 100% !important;
+    margin-top: 5px !important;
+  }
+  .graphic p {
+    padding: 5px 0 !important;
+    font-size: 15px !important;
+  }
+
+  .hobie1 {
+    margin-left: 0 !important;
+    padding: 0 20px !important;
+  }
+  .hobie1 h2.hob {
+    margin-left: 0 !important;
+    padding: 0 !important;
+    font-size: 22px !important;
+  }
+  .hob-info {
+    margin-left: 0 !important;
+    padding-left: 20px !important;
+  }
+
+  /* ===== QR ===========*/
+  .qrcode {
+    text-align: center !important;
+    margin-top: 30px !important;
+    padding: 20px !important;
+  }
+  .qrcode img {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    width: 150px !important;
+    display: inline-block !important;
+  }
+  .qrcode h2 {
+    text-align: center !important;
+    margin-right: 0 !important;
+    font-size: 18px !important;
+    margin-top: 10px !important;
+  }
+
+  .end {
+    width: 100% !important;
+    height: auto !important;
+    padding: 10px 10px !important;
+    font-size: 14px !important;
+    text-align: center !important;
+    background-color: rgba(0, 0, 0, 0.652) !important;
   }
 }
