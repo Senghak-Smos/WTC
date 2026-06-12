@@ -5,7 +5,9 @@
 }
 
 .navbar {
-  background-image: url(Image_index/Wonderland_.gif);
+  background-color: #111;
+  /* background-image: url(Image_index/Wonderland_.gif); */
+  will-change: transform;
   width: 100%;
   position: fixed;
   top: 0;
@@ -303,6 +305,7 @@ body {
   body {
     width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 
   .hamburger-btn {
@@ -374,6 +377,25 @@ body {
     padding-left: 15px !important;
     padding-right: 15px !important;
     gap: 20px;
+  }
+
+  .design1,
+  .video-card,
+  .ser-2 {
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 0 auto 20px auto !important;
+    display: block !important;
+  }
+
+  .ser-2 img,
+  .ser-2 video,
+  video {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 10px !important;
+    margin: 0 auto !important;
+    display: block !important;
   }
 
   .design1 {
