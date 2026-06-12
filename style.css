@@ -903,7 +903,7 @@ textarea::placeholder {
   }
 
   .oo {
-    height: 75vh;
+    height: auto !important;
   }
 
   .oo1 {
@@ -915,19 +915,22 @@ textarea::placeholder {
     height: auto !important;
   }
 
-  .design1 {
-    width: calc(50% - 15px) !important;
-    height: auto !important;
+  .design {
+    width: calc(40% - 10px) !important;
+    height: 300px !important;
+    min-height: 220px !important;
+    padding: 15px 10px !important;
     margin: 0 !important;
     box-sizing: border-box !important;
-    position: relative !important;
   }
 
   .ser-2 img {
     width: 100% !important;
+    max-width: 320px !important;
     height: auto !important;
     border-radius: 8px !important;
     display: block;
+    margin: 0 auto 15px auto !important;
   }
 
   .next {
@@ -953,23 +956,23 @@ textarea::placeholder {
     border-radius: 6px !important;
   }
 
+  .design {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 220px !important;
+    padding: 20px 15px !important;
+    margin-bottom: 20px !important;
+    box-sizing: border-box !important;
+  }
+
   .tangle-1,
   .tangle-2 {
     display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 40px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
     padding: 0 10px !important;
     width: 100% !important;
-  }
-
-  .design {
-    width: calc(40% - 10px) !important;
-    height: 300px !important;
-    min-height: 220px !important;
-    padding: 15px 10px !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
   }
 
   .ser-1 img {
@@ -1046,6 +1049,15 @@ textarea::placeholder {
   .service1 h1::before,
   .contact h1::before {
     display: none !important;
+  }
+
+  .service1 h1,
+  .project-title {
+    position: relative !important;
+    margin-top: 40px !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+    width: 100% !important;
   }
 
   .contact {
