@@ -720,6 +720,7 @@ div .linemid {
     width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
   }
 
   .hamburger-btn {
@@ -778,6 +779,16 @@ div .linemid {
 
   .title1 h2::before {
     display: none !important;
+  }
+
+  .title1 p {
+    font-family: "BioRhyme", serif;
+    line-height: 1.5;
+  }
+
+  .title1 p {
+    padding: 0 15px;
+    font-size: 16px;
   }
 
   .pic-name {

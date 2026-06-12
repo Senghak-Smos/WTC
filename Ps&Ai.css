@@ -347,6 +347,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
   }
 
   .hamburger-btn {
