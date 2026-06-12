@@ -701,3 +701,68 @@ div .linemid {
 
 /*===================================================================================================*/
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ RESPONSIVE FOR CV SECTION ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .hamburger-btn {
+    display: inline-block !important;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1001;
+    margin-left: auto;
+  }
+
+  .navdiv {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 10px 10px !important;
+    width: 100%;
+  }
+
+  .logo h2 {
+    margin-right: 0 !important;
+    text-align: center;
+  }
+
+  .title {
+    display: none;
+    margin-right: 0 !important;
+    text-align: center;
+  }
+
+  .search {
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .search input {
+    display: none;
+    width: 250px;
+    align-items: center;
+  }
+
+  .search i {
+    display: none;
+    right: 15px;
+    top: 12px;
+  }
+
+  .bb {
+    display: none;
+  }
+
+  .title1 h2 {
+    font-size: 30px;
+  }
+
+  .title1 h2::before {
+    display: none !important;
+  }
+}

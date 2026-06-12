@@ -761,6 +761,402 @@ textarea::placeholder {
   height: 5vh;
 }
 
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ css seemore+++++++++++++++++++++++++++++++++++++*/
+.menu-checkbox,
+.hamburger-btn {
+  display: none;
+}
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ RESPONSIVE FOR PHONE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .hamburger-btn {
+    display: inline-block !important;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1001;
+    margin-left: auto;
+  }
+
+  .navdiv {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 10px 10px !important;
+    width: 100%;
+  }
+
+  .logo h2 {
+    margin-right: 0 !important;
+    text-align: center;
+  }
+
+  .title {
+    display: none;
+    margin-right: 0 !important;
+    text-align: center;
+  }
+
+  .search {
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .search input {
+    display: none;
+    width: 250px;
+    align-items: center;
+  }
+
+  .search i {
+    display: none;
+    right: 15px;
+    top: 12px;
+  }
+
+  .bb {
+    display: none;
+  }
+
+  /* Homee screen */
+  .home-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 10px 20px !important;
+    height: auto !important;
+    min-height: 55vh;
+  }
+
+  .logohak {
+    width: 100% !important;
+    margin: 0 auto 30px auto !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .logohak img {
+    width: 180px !important;
+    height: 180px !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    border-radius: 50%;
+  }
+
+  .hello {
+    width: 100% !important;
+    margin-top: 0 !important;
+    padding: 0 10px !important;
+    text-align: center;
+    order: 2;
+  }
+
+  .hello h1 {
+    font-size: 32px !important;
+    margin-bottom: 10px;
+  }
+
+  .hello p {
+    font-size: 16px !important;
+    line-height: 22px;
+  }
+
+  /* Animation */
+  .course {
+    order: 3;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+
+  .course span {
+    animation: none !important;
+    font-size: 20px !important;
+    white-space: normal !important;
+    text-align: center !important;
+    line-height: 1.4 !important;
+  }
+
+  /*​Button Contact*/
+  .see {
+    order: 6;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px !important;
+  }
+
+  .see button {
+    margin: 0 !important;
+    width: 160px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .oo {
+    height: 75vh;
+  }
+
+  .oo1 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 40px 10px !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .design1 {
+    width: calc(50% - 15px) !important;
+    height: auto !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+  }
+
+  .ser-2 img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+    display: block;
+  }
+
+  .next {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px !important;
+
+    position: relative !important;
+    margin: 0px auto 0px auto !important;
+    width: 100% !important;
+  }
+
+  .next .btn {
+    width: 36px !important;
+    height: 36px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 14px !important;
+    border-radius: 6px !important;
+  }
+
+  .tangle-1,
+  .tangle-2 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 40px !important;
+    padding: 0 10px !important;
+    width: 100% !important;
+  }
+
+  .design {
+    width: calc(40% - 10px) !important;
+    height: 300px !important;
+    min-height: 220px !important;
+    padding: 15px 10px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .ser-1 img {
+    width: 50px !important;
+    height: 50px !important;
+    display: block !important;
+    margin: 0 auto 15px auto !important;
+  }
+
+  .ser-text {
+    line-height: 20px !important;
+    font-size: 14px !important;
+    padding: 0 !important;
+  }
+
+  .ser-text h3 {
+    font-size: 16px !important;
+    margin-bottom: 8px;
+  }
+
+  .ser-text button,
+  .design button {
+    width: 100px !important;
+    height: 35px !important;
+    font-size: 12px !important;
+    margin-top: 10px !important;
+  }
+
+  .icon i {
+    font-size: 30px;
+    margin-left: 10px;
+    padding: 0 10px;
+  }
+
+  .about {
+    flex-direction: column !important;
+    padding: 60px 20px !important;
+    text-align: center;
+    height: auto !important;
+  }
+
+  .pic-box {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+
+  .about .pic-box img {
+    position: relative !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    width: 180px !important;
+    height: 180px !important;
+  }
+
+  .text {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+
+  .text h1 {
+    font-size: 28px !important;
+  }
+
+  .text p {
+    padding: 0 !important;
+    font-size: 16px !important;
+  }
+
+  .about-cv {
+    padding: 0 !important;
+  }
+
+  .service h1::before,
+  .service1 h1::before,
+  .contact h1::before {
+    display: none !important;
+  }
+
+  .contact {
+    padding: 40px 15px !important;
+    text-align: center !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .contact .in-gif {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 25px !important;
+    width: 100% !important;
+  }
+
+  .contact .in-gif img {
+    width: 85% !important;
+    max-width: 280px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+  }
+
+  .contact .in {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+    padding: 0 !important;
+  }
+
+  .contact .in input[type="text"],
+  .contact .en input,
+  .contact .in textarea {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    height: 45px;
+  }
+
+  .contact .in textarea {
+    height: 120px !important;
+    padding: 10px !important;
+  }
+
+  .contact .in button {
+    width: 100% !important;
+    margin: 10px 0 0 0 !important;
+    height: 45px !important;
+    font-size: 16px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px;
+  }
+
+  .foot {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    gap: 35px !important;
+    padding: 40px 25px !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .foot .abou,
+  .foot .quick,
+  .foot .quick1,
+  .foot .con {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .foot h2 {
+    font-size: 20px !important;
+    margin-bottom: 5px !important;
+    position: relative;
+  }
+
+  .foot h2::before {
+    display: none !important;
+  }
+
+  .foot li {
+    list-style: none !important;
+    margin-bottom: 12px !important;
+  }
+
+  .foot .con p {
+    margin-top: 5px !important;
+    font-size: 14px !important;
+    opacity: 0.8;
+  }
+
+  .foot .f-m {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 15px !important;
+    padding: 0 !important;
+    margin-top: 15px !important;
+  }
+
+  .end {
+    text-align: center !important;
+    padding: 10px !important;
+    font-size: 13px !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+}
